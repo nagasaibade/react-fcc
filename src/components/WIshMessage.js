@@ -1,7 +1,12 @@
 import React from "react";
-import  ReactDOM  from "react";
 
 const WishMessage = () => {
+
+
+
+    let style = {
+        color :'Purple'
+    }
     //by default keeping morning
     let wishMessage = "Morning"
 
@@ -11,13 +16,13 @@ const WishMessage = () => {
         wishMessage = "Evening";
     else if(date.getHours() >= 12 && date.getHours() < 15  )
         wishMessage = 'Afternoon';
-    else if(date.getHours() >= 15 && date.getHours() < 19 )
-        wishMessage = 'Evening'
+    else if(date.getHours() >= 15 && date.getHours() <=24 )
+        wishMessage = 'Night'
 
     return (
-       <div>
+       <div style={style}>
         <h1>
-            Praise the Lord  Good { wishMessage }!!!
+            <span >Praise the Lord</span>   Good { wishMessage }!!!
         </h1>
        </div>
     )
