@@ -19,6 +19,8 @@ import ConditionalRendering from './components/conditional-rendering/Conditional
 
 function App() {
 
+  //just practicing git here (ignore this line)
+
   const jokeComponent = jokes.map(joke => <Joke key ={joke.id} joke ={{
     question : joke.question,
     punchLine : joke.punchLine
